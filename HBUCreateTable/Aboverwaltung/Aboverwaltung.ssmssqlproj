@@ -19,6 +19,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Abfragen" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="AboQuery.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:STEFFS-SURFACE\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>STEFFS-SURFACE\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>AboQuery.sql</FullPath>
+        </FileNode>
         <FileNode Name="CreateAboTable.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:STEFFS-SURFACE\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>STEFFS-SURFACE\SQLEXPRESS</AssociatedConnSrvName>
@@ -43,11 +49,17 @@
           <AssociatedConnUserName />
           <FullPath>InsertDataIntoTables.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery1.sql">
+        <FileNode Name="QueryA1.1-A1.7.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:STEFFS-SURFACE\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>STEFFS-SURFACE\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
+          <FullPath>QueryA1.1-A1.7.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:STEFFS-SURFACE\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>STEFFS-SURFACE\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
