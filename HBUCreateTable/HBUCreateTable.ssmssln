@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "HBUCreateTable", "HBUCreateTable\HBUCreateTable.ssmssqlproj", "{7D6147D4-C873-4A3F-B45D-F73443F296A4}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Aboverwaltung", "Aboverwaltung\Aboverwaltung.ssmssqlproj", "{3437E652-9F6C-4A7C-B63E-7781EEEF4762}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D6147D4-C873-4A3F-B45D-F73443F296A4}.Default|Default.ActiveCfg = Default
+		{EEBA63EE-49D3-4419-B592-3D4D3CFF97BF}.Default|Default.ActiveCfg = Default
+		{3437E652-9F6C-4A7C-B63E-7781EEEF4762}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
