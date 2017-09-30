@@ -87,7 +87,7 @@ values (33,
 	(select id from Anrede where Anrede = 'Frau'),
 	(select id from AboArt where AboArt = 'Monatsabo'),
 	(select id from Ort where PLZ = '3000'),
-	'Pozi','Isabelle' ,convert(date, '15.07.2005',104));
+	'Pozzi','Isabelle' ,convert(date, '15.07.2005',104));
 
 print 'Mitglieder einfügen'
 

@@ -33,3 +33,21 @@ select * from Aboart order by Gebühr
 select * from Ort order by ort asc , PLZ desc
 --- 
 select * from Mitglied order by Eintritt
+
+--- Tabelle so ausgeben wie ürsprünglich for der Normalisierung dargestellt
+select 
+	Mitglied.ID,
+	Anrede.Anrede, 
+	Mitglied.Nachname, 
+	Mitglied.Vorname,
+	Ort.PLZ,
+	Ort.Ort,
+	Mitglied.Eintritt,
+	AboArt.AboArt,
+	AboArt.Gebühr
+	from Mitglied, Anrede, Ort, AboArt 
+	where Mitglied.AnredeID = Anrede.ID 
+		and Ort.ID = Mitglied.OrtID
+		and AboArt.ID = Mitglied.AboID 
+	order by Mitglied.ID asc
+
