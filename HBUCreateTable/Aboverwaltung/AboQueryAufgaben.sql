@@ -8,8 +8,8 @@ use Abo
 
 select	Nachname as [Name],
 		Vorname,
-		Eintritt as [MItglied seit] 
-		from Mitglied order by Eintritt desc;
+		Eintritt as [Mitglied seit] 
+		from Mitglied order by Eintritt asc;
 
 --A1.2
 --Selektieren Sie die alle Mitglieder mit Nachname, Vorname, Eintritt
@@ -64,4 +64,13 @@ select
 	Mitglied.Nachname 
 	from Mitglied where Mitglied.Nachname like ('%e%') and Mitglied.Vorname like ('%a')
 
+select count(*) as Anzahl from AboArt
+select min(Gebühr) as MinGebühr from AboArt
+select avg(Gebühr) as AvgGebühr from AboArt
+select sum (Gebühr) as Summe from AboArt
 
+select count(*) as Anzahl,
+	min(Gebühr) as MinGebühr,
+	max(Gebühr) as MaxGebühr,
+	avg(gebühr) as AvgGebühr,
+	sum(Gebühr) as SumGebühr from AboArt
