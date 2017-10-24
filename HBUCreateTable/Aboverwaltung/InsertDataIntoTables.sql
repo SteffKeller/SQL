@@ -18,16 +18,16 @@ go
 DBCC CHECKIDENT ('[Ort]',RESEED, 0);
 -- insert Ort values
 insert into Ort (PLZ,Ort)
-values	(8000, 'Zürich'),
-		(8021,'Zürich'),
-		(8048, 'Zürich'), 
+values	(8000, 'Zï¿½rich'),
+		(8021,'Zï¿½rich'),
+		(8048, 'Zï¿½rich'), 
 		(3000, 'Bern'),
 		(4000, 'Basel');
 select * from Ort
 delete from Ort
 go
 -- insert AboArt values
-insert into AboArt (AboArt,Gebühr)
+insert into AboArt (AboArt,Gebï¿½hr)
 values	('Student',500.00),
 		('Jahresabo', 1000.00),
 		('Monatsabo', 150.00);
@@ -62,7 +62,7 @@ values (33,
 	(select id from Anrede where Anrede = 'Frau'),
 	(select id from AboArt where AboArt = 'Jahresabo'),
 	(select id from Ort where PLZ = '8021'),
-	'Bürgin','Sandra', convert (date,'01.05.1989',104)),
+	'Bï¿½rgin','Sandra', convert (date,'01.05.1989',104)),
 	(55, 
 	(select id from Anrede where Anrede = 'Herr'),
 	(select id from AboArt where AboArt = 'Monatsabo'),
@@ -77,7 +77,7 @@ values (33,
 	(select id from Anrede where Anrede = 'Frau'),
 	(select id from AboArt where AboArt = 'Jahresabo'),
 	(select id from Ort where PLZ = '3000'),
-	'Müller','Karina' ,convert (date, '30.08.2005',104)),
+	'Mï¿½ller','Karina' ,convert (date, '30.08.2005',104)),
 	(88, 
 	(select id from Anrede where Anrede = 'Herr'),
 	(select id from AboArt where AboArt = 'Student'),
@@ -89,13 +89,13 @@ values (33,
 	(select id from Ort where PLZ = '3000'),
 	'Pozzi','Isabelle' ,convert(date, '15.07.2005',104));
 
-print 'Mitglieder einfügen'
+print 'Mitglieder einfï¿½gen'
 
 select * from Mitglied
 go 
--- tabelleninhalt löschen
+-- tabelleninhalt lï¿½schen
 delete from Mitglied
 
 
---- alle einträge in der Tabelle löschen
+--- alle eintrï¿½ge in der Tabelle lï¿½schen
 delete from Ort;

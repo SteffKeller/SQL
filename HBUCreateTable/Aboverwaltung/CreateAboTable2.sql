@@ -10,7 +10,7 @@ create table AboArt
 (
 	ID int IDENTITY(1,1) NOT NULL,
 	AboArt varchar(50) NOT NULL,
-	Gebühr DECIMAL(7,3) NULL,
+	Gebï¿½hr DECIMAL(7,3) NULL,
 	constraint PK_AboArt primary key (ID)
 );
 go
@@ -33,6 +33,11 @@ create table Ort
 	constraint PK_Ort primary key (ID)
 );
 go
+
+create table bla
+(
+	constraint bla primary key (ID)
+)
 
 
 -- Mitglied create
@@ -70,10 +75,10 @@ alter table Ort
 
 	-- default constraints vergiebt einen default Wert falls der Inhalt nicht explizit angegeben wird
 alter table Aboart
-	add constraint D_gebuehr default 0.0 for Gebühr;
+	add constraint D_gebuehr default 0.0 for Gebï¿½hr;
 
 	-- check constraints
-	-- kann eingaben auf bestimmte werte oder bereichte einschränken, geht auch mit Regex
+	-- kann eingaben auf bestimmte werte oder bereichte einschrï¿½nken, geht auch mit Regex
 alter table Ort
 	add constraint ch_plz check (PLZ between 1000 and 9999);
 
