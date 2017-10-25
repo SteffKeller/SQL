@@ -51,3 +51,39 @@ select
 		and AboArt.ID = Mitglied.AboID 
 	order by Mitglied.ID asc
 
+-- 24.1017 Aggregatfunktionen
+select count(*) as Anzahl from AboArt
+select min(Gebühr) as MinGebühr from AboArt
+select avg(Gebühr) as AvgGebühr from AboArt
+select sum (Gebühr) as Summe from AboArt
+
+select count(*) as Anzahl,
+	min(Gebühr) as MinGebühr,
+	max(Gebühr) as MaxGebühr,
+	avg(gebühr) as AvgGebühr,
+	sum(Gebühr) as SumGebühr from AboArt
+
+
+select AnredeID from Mitglied 
+group by AnredeID
+order by AnredeID
+
+-- Anzahl Männer und Frauen der Mitglieder
+select AnredeID, count(*)  as Anzahl from Mitglied 
+group by AnredeID
+order by AnredeID
+
+--Anrede, Name , Vorname
+select ad.Anrede,
+		 Vorname, 
+		 Nachname, 
+		 ar.AboArt,
+		Ort.PLZ,
+		Ort.Ort
+		 from Mitglied m
+		inner join AboArt ar 
+			on m.AboID = ar.ID
+		inner join Anrede ad 
+			on m.AnredeID = ad.ID
+		inner join Ort 
+			on Ort.ID = m.OrtID
