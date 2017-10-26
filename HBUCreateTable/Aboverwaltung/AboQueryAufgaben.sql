@@ -70,32 +70,42 @@ select
 --und die Anrede ï¿½Frauï¿½ ist. Sortieren Sie die Ausgabe aufsteigend nach Nachname, Vorname
 
 select a.Anrede, m.Vorname, m.Nachname, aa.Gebühr
-from Mitglied m
-inner join Anrede a on m.AnredeID = a.ID
-inner join AboArt aa on m.AboID = aa.ID
-where a.Anrede = 'Frau' and aa.Gebühr <= 500
-order by Nachname asc, Vorname asc
+	from Mitglied m
+		inner join Anrede a 
+			on m.AnredeID = a.ID
+		inner join AboArt aa 
+			on m.AboID = aa.ID
+		where a.Anrede = 'Frau' 
+			and aa.Gebühr <= 500
+		order by Nachname asc, Vorname asc
 
 ----A2.2
 --Selektieren Sie alle Abos, bei welchen die Anrede „Herr“ 
 --ist und der Ort „Bern“ und die Aboart „Student“ ist.
 select a.Anrede, m.Vorname, m.Nachname, Ort.Ort, AboArt.AboArt
-from Mitglied m
-inner join Anrede a on m.AnredeID = a.ID 
-inner join Ort on  m.OrtID = Ort.ID
-inner join AboArt on m.AboID = AboArt.ID
-where a.Anrede = 'Herr' and Ort.Ort = 'Bern' and AboArt.AboArt = 'Student'
-
-select * from Mitglied
+	from Mitglied m
+		inner join Anrede a 
+			on m.AnredeID = a.ID 
+		inner join Ort 
+			on  m.OrtID = Ort.ID
+		inner join AboArt 
+			on m.AboID = AboArt.ID
+		where a.Anrede = 'Herr' 
+			and Ort.Ort = 'Bern' 
+			and AboArt.AboArt = 'Student'
 
 --2.3 Listen Sie alle Abos, bei welchen die 
 --Anrede „Herr“ ist und der Ort „Zürich“ oder „Bern“ ist.
 select a.Anrede, m.Vorname, m.Nachname, Ort.Ort, AboArt.AboArt
-from Mitglied m
-inner join Anrede a on m.AnredeID = a.ID 
-inner join Ort on  m.OrtID = Ort.ID
-inner join AboArt on m.AboID = AboArt.ID
-where a.Anrede = 'Herr' and Ort.Ort in ( 'Bern','Zürich')
+	from Mitglied m
+		inner join Anrede a 
+			on m.AnredeID = a.ID 
+		inner join Ort 
+			on  m.OrtID = Ort.ID
+		inner join AboArt 
+			on m.AboID = AboArt.ID
+		where a.Anrede = 'Herr' 
+		and Ort.Ort in ( 'Bern','Zürich')
 
 
 --2.4
@@ -129,4 +139,77 @@ inner join AboArt on m.AboID = AboArt.ID
 where a.Anrede = 'Herr' and AboArt in ('Student','Jahresabo')
 
 
+--A3.1
+--Erstellen Sie eine Abfrage, welche die Vornamen und Nachnamen der Mitglieder kommagetrennt zusammengefügt und als eine Spalte listet.
+select vorname + ',' + nachname as Fullname
+	from Mitglied 
+	order by 1
 
+
+--A3.2
+--Ändern Sie die Abfrage aus der A3.1 und zeigen Sie dabei Vorname u. Nachname in Großschrift an.
+select Upper(vorname + ',' + nachname) as Fullname
+	from Mitglied 
+	order by 1
+
+--A3.3
+--Listen Sie alle Mitglieder mit Nachname u. Vorname 
+--und ordnen Sie die Ausgabe nach der Zeichenlänge (Anzahl Zeichen) der Nachnamen absteigend.
+select Vorname, Nachname
+	from Mitglied
+	order by Len(nachname) desc
+--A3.4
+--Listen Sie alle Mitglieder mit der Kurzbezeichnung 
+--(Erster Buchstabe aus Nachname u. Vorname) aufsteigend.
+
+select  left(vorname,1) + left(nachname,1)
+	from Mitglied
+	order by 1 asc
+
+--A3.5
+--Listen Sie alle Mitglieder mit Vorname, Nachname und dem Eintrittsjahr (z.B. 1990).
+-- Sortieren Sie die Ausgabe nach dem Eintrittsjahr absteigend.
+	
+select Vorname, Nachname, year(Eintritt)
+	from Mitglied 
+	where YEAR(Eintritt) = 1990
+	order by Eintritt
+
+--A3.6
+--Ermitteln Sie mit einer Abfrage die Mitglieder (Vorname, Nachname, Eintritt) welche im Jahr 2005 eingetreten sind.
+select Vorname,Nachname,Eintritt
+	from Mitglied
+	where YEAR(Eintritt) = 2005
+
+--	4. Abfragen mit Aggregatfunktionen
+--A4.1
+--Ermitteln Sie mit einer Abfrage den tiefsten, höchsten und Durchschnittspreis aller Abo Arten.
+select min(gebühr), max(gebühr), avg(gebühr)
+ from AboArt
+
+-- A4.2
+--Ermitteln Sie mit einer Abfrage die Anzahl der weiblichen Mitglieder.
+
+select count(Vorname)
+	from Mitglied
+	inner join Anrede a on a.ID = Mitglied.AnredeID where a.Anrede = 'Frau'
+
+--A4.3
+--Ermitteln Sie mit einer Abfrage die Anzahl der Mitglieder (Vorname, Nachname, Eintritt)
+-- welche im Jahr 2005 eingetreten sind.
+
+select count(nachname)
+	from Mitglied
+	where year(eintritt) = 2005
+
+
+--A4.4
+--Ermitteln Sie mit einer Abfrage die Anzahl der welche in „Zürich“ (Ort) wohnen.
+select count(nachname)
+	from Mitglied
+	inner join ort o on o.ID = Mitglied.OrtID where o.Ort = 'Zürich'
+
+--A4.5
+--Ermitteln Sie mit einer Abfrage die Anzahl der Mitglieder 
+--pro Abo Art (d.h. für jede Abo Arten wird die Mitgliederanzahl ausgegeben).
+select count(aboID) from Mitglied
