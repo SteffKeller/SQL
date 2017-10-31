@@ -212,4 +212,14 @@ select count(nachname)
 --A4.5
 --Ermitteln Sie mit einer Abfrage die Anzahl der Mitglieder 
 --pro Abo Art (d.h. für jede Abo Arten wird die Mitgliederanzahl ausgegeben).
-select count(aboID) from Mitglied
+select AboArt.AboArt, count(*) 
+	from Mitglied
+		inner join AboArt on AboArt.ID = Mitglied.AboID
+		group by AboArt.AboArt
+--A4.6
+--Ermitteln Sie mit einer Abfrage das Total der Gebühren sämtlicher Mitglieder.
+select SUM(aa.Gebühr)
+	from Mitglied
+	inner join AboArt aa on aa.ID = Mitglied.AboID
+
+select * from Mitglied 
