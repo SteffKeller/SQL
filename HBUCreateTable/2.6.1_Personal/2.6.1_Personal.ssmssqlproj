@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="2.6.1_Personal">
+  <Items>
+    <LogicalFolder Name="Verbindungen" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="STEFFS-SURFACE\SQLEXPRESS:STEFFS-SURFACE\Stefan Keller">
+          <Created>2018-02-11T20:18:56.8456272+01:00</Created>
+          <Type>SQL</Type>
+          <Server>STEFFS-SURFACE\SQLEXPRESS</Server>
+          <UserName />
+          <Authentication>Windows-Authentifizierung</Authentication>
+          <InitialDB>MLZ_DB_Bibliothek</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Abfrage</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Abfragen" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="2.6.1_Drop_Person.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:STEFFS-SURFACE\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>STEFFS-SURFACE\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>2.6.1_Drop_Person.sql</FullPath>
+        </FileNode>
+        <FileNode Name="2.6.1_Person_RM.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:STEFFS-SURFACE\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>STEFFS-SURFACE\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>2.6.1_Person_RM.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Sonstiges" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

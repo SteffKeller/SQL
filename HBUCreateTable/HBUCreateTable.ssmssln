@@ -7,14 +7,17 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "HBUCreateTable", "HBUCreate
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Aboverwaltung", "Aboverwaltung\Aboverwaltung.ssmssqlproj", "{3437E652-9F6C-4A7C-B63E-7781EEEF4762}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "2.6.1_Personal", "2.6.1_Personal\2.6.1_Personal.ssmssqlproj", "{2333D393-62F1-4CF4-98A4-CD70461BDB0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7D6147D4-C873-4A3F-B45D-F73443F296A4}.Default|Default.ActiveCfg = Default
-		{EEBA63EE-49D3-4419-B592-3D4D3CFF97BF}.Default|Default.ActiveCfg = Default
 		{3437E652-9F6C-4A7C-B63E-7781EEEF4762}.Default|Default.ActiveCfg = Default
+		{4186850F-CB39-48F1-BC1B-F09321CAE8F5}.Default|Default.ActiveCfg = Default
+		{2333D393-62F1-4CF4-98A4-CD70461BDB0E}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
