@@ -73,7 +73,8 @@ select Person.PersonalNr,
 		Kunde.Umsatz
 		from Kunde 
 		inner join Person 
-		on Kunde.Person_PersonalNr = Person.PersonalNr;
+		on Kunde.Person_PersonalNr = Person.PersonalNr
+	
 
 select Person.PersonalNr,
 		Person.Name,
