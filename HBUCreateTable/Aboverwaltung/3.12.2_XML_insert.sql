@@ -67,6 +67,11 @@ OrderDetails
 FROM tblOrdersSchema WHERE OrderDetails.exist('/Root/OrderDetail[@ProductID = 778]') = 1
 GO
 
+
+----- A1.6 Listen Sie mit einer SELECT Abfrage die ProductID der ersten Bestellzeile (Root/OrderDetail/@ProductID)[1]). 
+--Verwenden Sie hierzu für den Daten Zugriff die value Methode.
+select  OrderDetails.value('(Root/OrderDetail/@ProductID)[1]', 'varchar(80)')
+from tblOrdersSchema
 ---drop tables
 drop table tblOrders,tblOrdersSchema
 
