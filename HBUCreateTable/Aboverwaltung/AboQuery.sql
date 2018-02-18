@@ -73,17 +73,3 @@ select AnredeID, count(*)  as Anzahl from Mitglied
 group by AnredeID
 order by AnredeID
 
---Anrede, Name , Vorname
-select ad.Anrede,
-		 Vorname, 
-		 Nachname, 
-		 ar.AboArt,
-		Ort.PLZ,
-		Ort.Ort
-		 from Mitglied m
-		inner join AboArt ar 
-			on m.AboID = ar.ID
-		inner join Anrede ad 
-			on m.AnredeID = ad.ID
-		inner join Ort 
-			on Ort.ID = m.OrtID

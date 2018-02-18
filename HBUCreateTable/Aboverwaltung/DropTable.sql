@@ -19,3 +19,5 @@ drop table if exists Anrede;
 drop table if exists Ort;
 
 go
+
+drop index PK_Mitglied on Mitglied

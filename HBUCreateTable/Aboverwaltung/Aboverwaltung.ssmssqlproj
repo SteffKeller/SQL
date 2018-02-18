@@ -61,6 +61,12 @@
           <AssociatedConnUserName />
           <FullPath>DropTable.sql</FullPath>
         </FileNode>
+        <FileNode Name="Indexes_Transaction.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:STEFFS-SURFACE\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>STEFFS-SURFACE\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Indexes_Transaction.sql</FullPath>
+        </FileNode>
         <FileNode Name="InsertDataIntoTables.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:STEFFS-SURFACE\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>STEFFS-SURFACE\SQLEXPRESS</AssociatedConnSrvName>

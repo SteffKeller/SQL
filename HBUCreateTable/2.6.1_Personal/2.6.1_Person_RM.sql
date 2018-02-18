@@ -17,6 +17,7 @@ CREATE TABLE Kunde (
   Person_PersonalNr INTEGER  NOT NULL  ,
   Funktion VARCHAR(20)    ,
   Umsatz Float   ,
+  PRIMARY KEY(Person_PersonalNr),
   FOREIGN KEY(Person_PersonalNr)
     REFERENCES Person(PersonalNr));
 GO
@@ -30,6 +31,7 @@ CREATE TABLE Dozent (
   Person_PersonalNr INTEGER  NOT NULL  ,
   Biographie VARCHAR(50)    ,
   HonorarproTag float   ,
+  PRIMARY KEY(Person_PersonalNr),
   FOREIGN KEY(Person_PersonalNr)
     REFERENCES Person(PersonalNr));
 GO

@@ -19,3 +19,4 @@ create table class
 go
 -- Tabelle löschen
 drop table class;
+
