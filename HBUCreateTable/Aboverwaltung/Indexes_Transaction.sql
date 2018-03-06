@@ -1,5 +1,6 @@
 --INDEX ---------------------------------------------------------------	
-
+use Abo
+GO
 --Anrede, Name , Vorname
 select ad.Anrede,
 		 Vorname, 
@@ -44,5 +45,11 @@ begin transaction
 delete from Mitglied
 select * from Mitglied
 
+
+
 ---Transaktion beendet
 rollback
+
+---commit Transcation
+commit
+
