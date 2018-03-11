@@ -79,6 +79,12 @@
           <AssociatedConnUserName />
           <FullPath>T-SQL.sql</FullPath>
         </FileNode>
+        <FileNode Name="T-SQL-A2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:STEFFS-SURFACE\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>STEFFS-SURFACE\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>T-SQL-A2.sql</FullPath>
+        </FileNode>
         <FileNode Name="update.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:STEFFS-SURFACE\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>STEFFS-SURFACE\SQLEXPRESS</AssociatedConnSrvName>
