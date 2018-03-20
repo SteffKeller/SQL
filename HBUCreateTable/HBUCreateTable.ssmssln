@@ -13,6 +13,10 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Rekursion_Teilestuktur", "R
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "CS2_Persons", "CS2_Persons\CS2_Persons.ssmssqlproj", "{1A8C9205-DDC0-4FF1-ACC5-69911604A04C}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "ArztDB", "ArztDB\ArztDB.ssmssqlproj", "{DDB753CF-0306-48CB-8614-8C9E445B848E}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "BuchAuthor", "BuchAuthor\BuchAuthor.ssmssqlproj", "{A856ACC9-1864-408B-8C87-67FA6E1A5A04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
@@ -22,8 +26,10 @@ Global
 		{3437E652-9F6C-4A7C-B63E-7781EEEF4762}.Default|Default.ActiveCfg = Default
 		{2333D393-62F1-4CF4-98A4-CD70461BDB0E}.Default|Default.ActiveCfg = Default
 		{9E55D6CA-517E-469E-B615-28BFB8AD7933}.Default|Default.ActiveCfg = Default
-		{72048288-39ED-44A2-A9AF-D33CEA3E37A8}.Default|Default.ActiveCfg = Default
 		{1A8C9205-DDC0-4FF1-ACC5-69911604A04C}.Default|Default.ActiveCfg = Default
+		{BEC811D9-1FD4-4755-9DCF-3BF085DD6490}.Default|Default.ActiveCfg = Default
+		{DDB753CF-0306-48CB-8614-8C9E445B848E}.Default|Default.ActiveCfg = Default
+		{A856ACC9-1864-408B-8C87-67FA6E1A5A04}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
