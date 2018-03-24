@@ -43,6 +43,12 @@
           <AssociatedConnUserName />
           <FullPath>arzt_insert_data.sql</FullPath>
         </FileNode>
+        <FileNode Name="arzt_übungen.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:STEFFS-SURFACE\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>STEFFS-SURFACE\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>arzt_übungen.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Sonstiges" Type="3" Sorted="true">

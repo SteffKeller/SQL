@@ -99,7 +99,8 @@ select 'Result is: ', @result;
 --A2.3
 --Erstellen Sie nach oben stehendem Vorbild eine gespeicherte Prozedur, welche entweder die
 --Summe oder der Mittelwert der übergebenen Parameter berechnet. Ein Parameter bestimmt
---welche Funktion berechnet wird!USE [Abo]
+--welche Funktion berechnet wird!
+USE [Abo]
 GO
 /****** Object:  StoredProcedure [dbo].[SumScore]    Script Date: 11.03.2018 14:28:18 ******/
 SET ANSI_NULLS ON
